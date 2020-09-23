@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::admin login form::</title>
+</head>
+<body style="border: 2px solid #ddd" >
+	<form action="{% url 'adminloginpage' %}" method="POST" style="text-align: center;">
+		{% csrf_token %}
+		<h1 style="color: red">Admin login page</h1>
+		<label for="uname">Name  : </label>
+		<input type="text" name="username"><br>
+		<label for="password">Password :</label>
+		<input type="password" name="password"><br>
+		<input type="submit" name="submit">
+	</form>
+
+</body>
+</html>
